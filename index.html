@@ -78,41 +78,42 @@
                     <h4 class="mt-5">Memory</h4>
                     <div class="row ">
                         <div class="col">
-                            <input class="form-control bg-secondary text-white" type="text" value="8GB unified Memory"
-                                aria-label="8GB unified Memory" readonly>
+                            <input id="8gb-memory-card-charge" class="form-control bg-secondary text-white " type="text"
+                                value="8GB unified Memory" aria-label="8GB unified Memory" readonly>
                         </div>
                         <div class="col">
-                            <input class="form-control" type="text" value="16GB unified Memory"
-                                aria-label="16GB unified Memory" readonly>
+                            <input id="16gb-memory-card-charge" class="form-control btn-outline-primary" type="text"
+                                value="16GB unified Memory" aria-label="16GB unified Memory" readonly>
 
                         </div>
 
                         <h4 class="mt-5 ">Storage</h4>
 
                         <div class="col">
-                            <input class="form-control bg-secondary text-white" type="text" value="256GB SSD Storage"
-                                aria-label="256GB SSD Storage" readonly>
+                            <input id="256gb-ssd-storage" class="form-control bg-secondary text-white " type="text"
+                                value="256GB SSD Storage" aria-label="256GB SSD Storage" readonly>
                         </div>
                         <div class="col">
-                            <input class="form-control" type="text" value="512GB SSD Storage"
-                                aria-label="512GB SSD Storage" readonly>
+                            <input id="512gb-ssd-storage" class="form-control  btn-outline-primary" type="text"
+                                value="512GB SSD Storage" aria-label="512GB SSD Storage" readonly>
 
                         </div>
                         <div class="col">
-                            <input class="form-control" type="text" value="1TB SSD Storage" aria-label="1TB SSD Storage"
-                                readonly>
+                            <input id="1tb-ssd-storage" class="form-control  btn-outline-primary" type="text"
+                                value="1TB SSD Storage" aria-label="1TB SSD Storage" readonly>
 
                         </div>
                         <h4 class="mt-5 ">Choose Your Delivery Option</h4>
 
                         <div class="col">
-                            <input class="form-control bg-secondary text-white p-2" type="text"
+                            <input id="general-delivery" class="form-control bg-secondary text-white p-2 " type="text"
                                 value="Friday AUG 25-Free prime Delivery" aria-label="Friday AUG 25-Free prime Delivery"
                                 readonly>
                         </div>
                         <div class="col">
-                            <input class="form-control px-1" type="text" value="Friday 21AUG- Delivery charge $20"
-                                aria-label="Friday 21AUG- Delivery charge $20" readonly>
+                            <input id="quick-delivery" class="form-control px-1  btn-outline-primary" type="text"
+                                value="Friday 21AUG- Delivery charge $20" aria-label="Friday 21AUG- Delivery charge $20"
+                                readonly>
 
                         </div>
 
@@ -123,7 +124,7 @@
                             <h5>Best Price</h5>
                         </div>
                         <div class="col">
-                            <h5>$1299</h5>
+                            <h5>$ <span id="best-price">1299</span></h5>
                         </div>
 
                     </div>
@@ -133,7 +134,7 @@
                             <h5>Extra Memory Cost</h5>
                         </div>
                         <div class="col">
-                            <h5>$0</h5>
+                            <h5>$ <span id="memory-cost">0</span> </h5>
                         </div>
                     </div>
                     <hr class="horizontal-line">
@@ -142,7 +143,7 @@
                             <h5>Extra Storage Cost</h5>
                         </div>
                         <div class="col">
-                            <h5>$0</h5>
+                            <h5>$ <span id="storage-cost">0</span> </h5>
                         </div>
                     </div>
                     <hr class="horizontal-line">
@@ -151,7 +152,7 @@
                             <h5>Delivery Charge</h5>
                         </div>
                         <div class="col">
-                            <h5>$0</h5>
+                            <h5>$ <span id="delivery-cost">0</span> </h5>
                         </div>
                     </div>
                     <hr class="horizontal-line">
@@ -160,22 +161,22 @@
                             <h5>Total Price</h5>
                         </div>
                         <div class="col">
-                            <h5>$1299</h5>
+                            <h5>$ <span id="total-price">1299</span></h5>
                         </div>
                     </div>
                     <hr class="horizontal-line">
                     <div class="row">
                         <div class="col">
                             <p id="promo-text">Add Promo Code</p>
-                            <input type="text" name="" placeholder="Enter your promo code" id="">
-                            <input id="submit-btn" type="submit" value="Apply">
+                            <input id="cupon-input" type="text" name="" placeholder="Enter your promo code" id="">
+                            <input id="cupon-input-btn" type="submit" value="Apply">
                         </div>
                     </div>
                 </div>
 
             </div>
             <hr>
-            <h1 id="total-amount">Total: $1299</h1>
+            <h1 class="text-center">Total: $ <span id="final-amount">1299</span></h1>
         </section>
     </main>
 
