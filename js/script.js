@@ -1,5 +1,3 @@
-
-
 document.getElementById('8gb-memory-card-charge').addEventListener("click", function () {
 
     const extraMemoryCost = document.getElementById('memory-cost');
@@ -19,7 +17,7 @@ document.getElementById('16gb-memory-card-charge').addEventListener("click", fun
 
 
 
-// SSD storage Function:
+//  addevent listner for SSD storage
 document.getElementById('256gb-ssd-storage').addEventListener('click', function () {
     const ssd256GbCost = document.getElementById('storage-cost');
     ssd256GbCost.innerText = 0;
@@ -51,7 +49,7 @@ document.getElementById('quick-delivery').addEventListener('click', function () 
     totalCalculation();
 })
 
-//calculation:
+//calculation for all cost
 function totalCalculation() {
     const bestPrice = parseFloat(document.getElementById('best-price').innerText);
     const memoryCost = parseFloat(document.getElementById('memory-cost').innerText);
@@ -68,14 +66,28 @@ function totalCalculation() {
 document.getElementById('cupon-input-btn').addEventListener('click', function () {
     const cuponInput = document.getElementById('cupon-input');
     const cuponInputField = cuponInput.value;
-    if (cuponInputField == 'stevekaku') {
+
+    // Applying condition for coupon code validation
+    if (cuponInputField == '') {
+        alert('Please enter your Cupon code.Empty input will not be acceptable')
+    }
+    else if (cuponInputField == 'stevekaku') {
         const previousFinalAmount = parseFloat(document.getElementById('final-amount').innerText);
         const totalAfterDiscount = previousFinalAmount - (previousFinalAmount / 100) * 20;
         document.getElementById('final-amount').innerText = totalAfterDiscount;
-        cuponInputField.value = "";
+        document.getElementById('cupon-input-btn').style.display = 'none'
+
+    }
+    else {
+        document.getElementById('cupon-error-message').style.display = 'block'
+        //timeout function for error message;
+        setTimeout(function () {
+            document.getElementById('cupon-error-message').remove();
+        }, 3000)
     }
 
 
-    console.log(cuponInput);
+
 })
+
 

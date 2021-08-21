@@ -1,3 +1,7 @@
+/* #mac-img{
+    width: 100%;
+} */
+
 #promo-text{
     font-size: 17px;
     margin-top: 25px;
@@ -22,4 +26,12 @@
 #total-amount{
     text-align: center;
 }
-
+#cupon-error-message{
+    background-color: #e00909;
+    color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    display: none;
+}

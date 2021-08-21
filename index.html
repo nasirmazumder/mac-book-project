@@ -63,10 +63,10 @@
     <main>
         <section class=" container mt-5">
             <div class="row">
-                <div class=" col col-lg-6 col-sm-5">
-                    <img id="img" src="images/mac.png" width="500" height="400" alt="">
+                <div class="col-lg-6 col-sm-10 col-md-5">
+                    <img src="images/mac.png" class="img-fluid" alt="">
                 </div>
-                <div class=" col col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-sm-10 col-md-5 ">
                     <h2>
                         Customize your Blue 24-Inch IMac with Apple M1 chip.
                     </h2>
@@ -169,7 +169,13 @@
                         <div class="col">
                             <p id="promo-text">Add Promo Code</p>
                             <input id="cupon-input" type="text" name="" placeholder="Enter your promo code" id="">
-                            <input id="cupon-input-btn" type="submit" value="Apply">
+                            <input id="cupon-input-btn" class=" btn btn-primary" type="submit" value="Apply">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5 id="cupon-error-message">Your cupon Code didn't Match.Please procced without cupon</h5>
                         </div>
                     </div>
                 </div>
@@ -179,12 +185,6 @@
             <h1 class="text-center">Total: $ <span id="final-amount">1299</span></h1>
         </section>
     </main>
-
-
-
-
-
-
     <!-- Javascript source link -->
     <script src="js/script.js"></script>
     <!-- Boostrape script -->
